@@ -138,10 +138,13 @@
         </div>
       </section>
 
-      <section style="margin-top: 180px" class="section personal-qualities">
+      <section
+        style="margin-top: 180px; margin-bottom: 0px"
+        class="section personal-qualities"
+      >
         <h3>Личные качества (Soft skills)</h3>
 
-        <div class="qualities-grid">
+        <div style="margin-bottom: 0px" class="qualities-grid">
           <div class="quality-card">
             <h4>💬 Открыт к обратной связи</h4>
             <p>
@@ -192,11 +195,57 @@
         <h2>Мои проекты</h2>
 
         <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Серверная часть магазина Shop_BY</h3>
+              <span class="project-date">Лето 2025</span>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">ASP.NET Core</span>
+              <span class="tech-tag">EF Core</span>
+              <span class="tech-tag">Ms SQL Server</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">RabbitMQ</span>
+              <span class="tech-tag">xUnit</span>
+            </div>
+            <div>
+              <p>
+                Приложение имеет два микросервиса: продукты и пользователи,
+                комуникация между ними через RabbitMq, когда пользователь
+                деактивируется, то деакивируются его продукты, а так же
+                наоборот. Для валидации использется fluentValidation,
+                реализованы CRUD операции, а также для пользователей реализовано
+                подтверждение электронной почты и сброс пароля через почту,
+                используются токены доступа. Для продуктов реализована
+                фильтрация, сортировка и пагинация с помощью библиотеки Sieve. В
+                качестве СУБД используется SQL Server, для доступа к данным
+                используется EF Core. Выполнено тестирование микросервисов с
+                помощью xUnit, написаны unit и integration тесты. Настроен
+                Docker, в Docker-compose добавлены 5 контейнеров: два
+                микросервиса, две базы данных к каждому микросервису и контейнер
+                для RabbitMq. Микросервисы построенны на Onion архитектуре.
+              </p>
+            </div>
+
+            <div class="project-links">
+              <p>
+                Server на GitHub:
+                <a
+                  href="https://github.com/MihailMakarenko/Shop_BY"
+                  target="_blank"
+                >
+                  https://github.com/MihailMakarenko/Shop_BY</a
+                >
+              </p>
+            </div>
+          </div>
+
           <!-- Проект 1 -->
           <div class="project-card">
             <div class="project-header">
               <h3>Серверная часть приложения обработки заявок</h3>
-              <span class="project-date">Весна 2025 - сейчас</span>
+              <span class="project-date">Весна 2025</span>
             </div>
             <div class="project-tech">
               <span class="tech-tag">C#</span>
@@ -220,6 +269,7 @@
                 Server на GitHub:
                 <a
                   href="https://github.com/MihailMakarenko/ApplicationProcessingProject"
+                  target="_blank"
                 >
                   https://github.com/MihailMakarenko/ApplicationProcessingProject</a
                 >
@@ -242,13 +292,19 @@
             <div class="project-links">
               <p>
                 Server на GitHub:
-                <a href="https://github.com/MihailMakarenko/server_svcsv">
+                <a
+                  href="https://github.com/MihailMakarenko/server_svcsv"
+                  target="_blank"
+                >
                   https://github.com/MihailMakarenko/server_svcsv</a
                 >
               </p>
               <p>
                 Client на GitHub:
-                <a href="https://github.com/MihailMakarenko/client_svcsv">
+                <a
+                  href="https://github.com/MihailMakarenko/client_svcsv"
+                  target="_blank"
+                >
                   https://github.com/MihailMakarenko/client_svcsv</a
                 >
               </p>
@@ -256,33 +312,6 @@
           </div>
 
           <!-- Проект 3 -->
-
-          <div class="project-card">
-            <div class="project-header">
-              <h3>Сайт "Аптека"</h3>
-              <span class="project-date">Весна 2024</span>
-            </div>
-            <div class="project-tech">
-              <span class="tech-tag">Html5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-
-            <div class="project-links">
-              <p>
-                Код на GitHub:
-                <a href="https://github.com/MihailMakarenko/course_WEB">
-                  https://github.com/MihailMakarenko/course_WEB</a
-                >
-              </p>
-              <p>
-                Deploy:
-                <a href="https://mihailmakarenko.github.io/course_WEB/#en">
-                  https://mihailmakarenko.github.io/course_WEB/#en</a
-                >
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -294,9 +323,7 @@
             их. Занимал призовые места в олимпиадах по математике. Например,
             получил диплом II степени на втором этапе республиканской олимпиады
             в 2021 году. Увлекаюсь шахматами — имею второй разряд. Обожаю решать
-            головоломки: например, собираю кубик Рубика. Постоянно вырабатываю
-            полезные привычки. Так, чтобы освоить слепую печать, сменил
-            раскладку с QWERTY на более удобную Colemak.
+            головоломки: например, собираю кубик Рубика.
           </p>
         </div>
       </section>
